@@ -15,7 +15,7 @@ const ECommerceNavbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 250) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -24,7 +24,7 @@ const ECommerceNavbar = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-slate-900">
+    <nav className="bg-white dark:bg-slate-900">
       <NavbarService />
       <div
         className={`${
@@ -108,7 +108,7 @@ const ECommerceNavbar = () => {
         </div>
       </div>
       <NavbarMenu />
-    </div>
+    </nav>
   );
 };
 
